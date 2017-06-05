@@ -23,10 +23,10 @@ Start reading OOP section
 
 Assignments| 
 ---| 
-JS Fundaments Part I| 
-Be the Intepreter| 
-Build Some Functions!| 
-JS Fundamentals Part II| 
+- [x] JS Fundaments Part I| 
+- [x] Be the Intepreter| 
+- [x] Build Some Functions!| 
+- [ ] JS Fundamentals Part II| 
 JS Fundamentals Part III| 
 JS Scroll **GitHub**| 
 Creating Objects I| 
