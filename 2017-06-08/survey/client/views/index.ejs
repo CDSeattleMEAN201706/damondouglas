@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey</title>
+        <style>
+            .field-container {
+                margin-top: 10px;
+            }
+            .field {
+                position: absolute;
+                left: 200px;
+                width: 150px;
+            }
+
+            textarea {
+                width: 100%;
+            }
+            .container {
+                position: relative;
+            }
+            form {
+                width: 400px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/result">
+                <div class="field-container">
+                    <label for="name">Your name:</label>
+                    <input class="field" type="text" name="name" value=""/>
+                </div>
+                <div class="field-container">
+                    <label for="loc">Location:</label>
+                    <select class="field" name="loc">
+                        <% locS.forEach(function(loc){ %>
+                            <option value="0"><%= loc %></option>
+                        <% }); %>
+                    </select>
+                </div>
+                <div class="field-container">
+                    <label for="favlang">Favorite Language:</label>
+                    <select class="field" name="favlang">
+                        <% langS.forEach(function(lang){ %>
+                            <option value="0"><%= lang %></option>
+                        <% }); %>
+                    </select>
+                </div>
+                <div class="field-container">
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="Comment (optional)"></textarea>
+                </div>
+                <div class="field-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+   </body>
+</html>
